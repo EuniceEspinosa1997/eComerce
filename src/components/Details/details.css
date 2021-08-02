@@ -1,0 +1,30 @@
+.container{
+    display: grid;
+    min-height: 100vh;
+    padding: 5rem 2rem;
+    margin: 0 auto;
+  
+}
+.details {
+
+    display:flex;
+    margin:10px;
+    padding:20px;
+    font-size:20px;
+    flex-direction: column;
+    align-items: center;
+  
+}
+.container .details-img img{
+     width:520px;
+}
+
+.container .details .detail-info{
+    display:flex;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+
+
+}
+  

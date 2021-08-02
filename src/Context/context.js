@@ -12,6 +12,11 @@ export const DataProvider = (props) =>{
     const [cart, setCart] = useState([]);
     const [total, setTotal] = useState(0);
 
+    const seeDetaiils = (id) => {
+        console.log(id)
+
+    }
+
     const addCart = (id) =>{
         const check = cart.every(item =>{
             return item.id !==id;
@@ -56,7 +61,8 @@ export const DataProvider = (props) =>{
         menu:[menu, setMenu],
         addCart: addCart,
         cart: [cart, setCart],
-        total: [total, setTotal]
+        total: [total, setTotal],
+        seeDetaiils: seeDetaiils
 
     }
     

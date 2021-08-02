@@ -14,6 +14,7 @@ function ProductoItem({
     
     const value = useContext(UserContext);
     const addCart = value.addCart;
+    const seeDetails = value.seeDetails;
 
 
 
@@ -32,7 +33,10 @@ function ProductoItem({
         <div className = 'button'>
             <button className = 'btn' onClick = {() => addCart(id)}>Add to cart</button>
             <div>
-                <a href = '/' className = 'btn'>Details</a>
+                <a href = '/details' className = 'btn' onClick = {() => { 
+                    
+                    return id;
+                }}>Details</a>
             </div>
         </div>
      </div>    

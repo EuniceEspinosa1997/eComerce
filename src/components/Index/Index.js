@@ -1,6 +1,7 @@
 import React from 'react';
 import Portada from '../../img/inicio.jpg';
 import {Link} from 'react-router-dom';
+import Logo from '../../img/logo.png';
 
 function Index() {
     return (
@@ -11,6 +12,9 @@ function Index() {
             <Link to = '/products'>
                 <h1 className = 'title'>Productos</h1>
             </Link>
+            <div className = 'img.details'>
+             <img src = {Logo} alt = ''/>
+            </div> 
         </div>
     )
 }

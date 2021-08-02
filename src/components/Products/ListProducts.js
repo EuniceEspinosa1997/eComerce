@@ -10,6 +10,7 @@ function ListProducts() {
       <h1 className = 'title'>Productos</h1>
         <div className = 'products'>
             {
+                
                 products.map(product =>(
                  <ProductoItem 
                     key = {product.id + "003"}
@@ -21,6 +22,7 @@ function ListProducts() {
                     quantity = {product.quantity}
                  />
                 ))
+                
             }
         </div>
      </>
