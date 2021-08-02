@@ -12,7 +12,6 @@ export const useProducts = () => {
     const getProducts = async() => {
         try{
            const resp = await productsApi.get('http://localhost:3006/products');
-            console.log(resp.data)
             setProducts(resp.data); 
         }catch(err){
             console.log(err);

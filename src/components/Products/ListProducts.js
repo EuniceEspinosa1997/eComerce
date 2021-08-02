@@ -12,7 +12,8 @@ function ListProducts() {
             {
                 products.map(product =>(
                  <ProductoItem 
-                    key ={product.title}
+                    key = {product.id + "003"}
+                    id = {product.id}
                     title = {product.title}
                     price = {product.price}
                     image = {product.image}
