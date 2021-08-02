@@ -1,0 +1,142 @@
+{
+  "users":[
+    {
+      "id": 1,
+      "name": "admin",
+      "pass": 1234,
+      "email": "eunice@gmail.com",
+      "userType": 1
+
+    },
+    {
+      "id": 2,
+      "name": "user",
+      "pass": 1234,
+      "email": "user@gmail.com",
+      "userType": 2
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "title": "Jabon en Polvo Roma",
+      "price": 34.9,
+      "image": "http://localhost:3000/assets/image/product01.jpg",
+      "categoryId": 1,
+      "quantity": 1
+    },
+    {
+      "id ": 2,
+      "title": "Multilimpiador desinfectante Pinol",
+      "price": 42.5,
+      "image": "http://localhost:3000/assets/image/product02.jpg",
+      "categoryId": 1,
+      "quantity": 1
+    },
+    {
+      "id": 3,
+      "title": "Cafe soluble Great Value colombiano",
+      "price": 95,
+      "image": "http://localhost:3000/assets/image/product03.jpg",
+      "categoryId": 3,
+      "quantity": 1
+    },
+    {
+      "id": 4,
+      "title": "Papel higienico Elite",
+      "price": 59,
+      "image": "http://localhost:3000/assets/image/product04.jpg",
+      "categoryId": 2,
+      "quantity": 1
+    },
+    {
+      "id": 5,
+      "title": "Atún Dolores aleta amarilla",
+      "price": 36.9,
+      "image": "http://localhost:3000/assets/image/product05.jpg",
+      "categoryId": 3,
+      "quantity": 1
+    },
+    {
+      "id": 6,
+      "title": "Pan tostado Bimbo fibra",
+      "price": 24.5,
+      "image": "http://localhost:3000/assets/image/product06.jpg",
+      "categoryId": 3,
+      "quantity": 1
+    },
+    {
+      "id": 7,
+      "title": "Cereal kellogg's Corn Flakes",
+      "price": 44.4,
+      "image": "http://localhost:3000/assets/image/product07.jpg",
+      "categoryId": 3,
+      "quantity": 1
+    },
+    {
+      "id": 8,
+      "title": "Azucar morena Zulka",
+      "price": 58,
+      "image": "http://localhost:3000/assets/image/product08.jpg",
+      "categoryId": 3,
+      "quantity": 1
+    },
+    {
+      "id": 9,
+      "title": "Aceite puro de soya Nutrioli",
+      "price": 38.9,
+      "image": "http://localhost:3000/assets/image/product09.jpg",
+      "categoryId": 3,
+      "quantity": 1
+    },
+    {
+      "id": 10,
+      "title": "Arroz verde Valle",
+      "price": 31,
+      "image": "http://localhost:3000/assets/image/product10.jpg",
+      "categoryId": 3,
+      "quantity": 1
+    },
+    {
+      "id": 11,
+      "title": "Rajas de jalapeño La Costeña",
+      "price": 19.7,
+      "image": "http://localhost:3000/assets/image/product11.jpg",
+      "categoryid": 3,
+      "quantity": 1
+    },
+    {
+      "id": 12,
+      "title": "Mayonesa McCormick",
+      "price": 54,
+      "image": "http://localhost:3000/assets/image/product12.jpg",
+      "categoryId": 3,
+      "quantity": 1
+    },
+    {
+      "title": "Mayonesa McCormick 500g",
+      "price": 94,
+      "image": "http://localhost:3000/assets/image/product12.jpg",
+      "categoryId": 3,
+      "quantity": 1,
+      "id": 13
+    }
+  ],
+  "categories": [
+    {
+      "id": "1",
+      "name": "detergentes",
+      "description": "productos de limpieza"
+    },
+    {
+      "id": "2",
+      "name": "hogar",
+      "description": "productos para el hogar"
+    },
+    {
+      "id": "3",
+      "name": "abarrotes",
+      "description": "productos de despensa"
+    }
+  ]
+}
