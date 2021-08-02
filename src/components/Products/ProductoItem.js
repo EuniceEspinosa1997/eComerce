@@ -1,25 +1,26 @@
 import React from 'react';
 
 function ProductoItem({
-    key,
     id,
     title,
     price,
     image,
-    category,
-    cantidad
+    categoryId,
+    quantity
+
 }) {
+    console.log(image)
     return (
      <div className = 'product'>
         <a href = '/'>
             <div className = 'product-img'>
-                    <img src = {image.default} alt = {title}/>
+                    <img src = {image} alt = {title}/>
             </div>
         </a>
         <div className = 'product-footer'>
             <h1>{title}</h1>
-            <p>{category}</p>
-            <p className = 'price'>{price}</p>
+            <p>{categoryId}</p>
+            <p className = 'price'>${price}</p>
         </div>
         <div className = 'button'>
             <button className = 'btn'>Add to cart</button>

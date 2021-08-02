@@ -11,7 +11,6 @@ function Index() {
             <Link to = '/products'>
                 <h1 className = 'title'>Productos</h1>
             </Link>
-            <img src = {Portada} alt = 'portada'/>
         </div>
     )
 }

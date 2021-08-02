@@ -1,13 +1,10 @@
-import React, {useContext} from 'react';            
-import { DataContext } from '../../context/Dataprovider';
+import React from 'react';
+import { useProducts } from '../../hooks/useProducts';            
 import ProductoItem from './ProductoItem';
 
 function ListProducts() {
-    const value = useContext(DataContext);
-    const [products] = value.products;
-    console.log(products);
-
-
+    const { products } = useProducts();
+    
     return (
      <>
       <h1 className = 'title'>Productos</h1>
@@ -15,13 +12,12 @@ function ListProducts() {
             {
                 products.map(product =>(
                  <ProductoItem 
-                    key ={product.id}
-                    id = {product.id}
+                    key ={product.title}
                     title = {product.title}
                     price = {product.price}
                     image = {product.image}
-                    category = {product.category}
-                    cantidad = {product.cantidad}
+                    categoryId = {product.categoryId}
+                    quantity = {product.quantity}
                  />
                 ))
             }
