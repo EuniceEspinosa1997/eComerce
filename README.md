@@ -5,7 +5,7 @@ _e-commerce aplication with reactjs_
 
 ### Install deps 🔧
 
-_In a terminal open the reactApp folder and run npm install _
+_In a terminal open the folder and run npm install _
 
 
 ```
