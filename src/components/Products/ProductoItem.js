@@ -1,4 +1,6 @@
-import React from 'react';
+import React,{useContext} from 'react';
+import { Link } from 'react-router-dom'
+import {UserContext} from '../../Context/context'
 
 function ProductoItem({
     id,
@@ -9,7 +11,12 @@ function ProductoItem({
     quantity
 
 }) {
-    console.log(image)
+    
+    const value = useContext(UserContext);
+    const addCart = value.addCart;
+
+
+
     return (
      <div className = 'product'>
         <a href = '/'>
@@ -23,7 +30,7 @@ function ProductoItem({
             <p className = 'price'>${price}</p>
         </div>
         <div className = 'button'>
-            <button className = 'btn'>Add to cart</button>
+            <button className = 'btn' onClick = {() => addCart(id)}>Add to cart</button>
             <div>
                 <a href = '/' className = 'btn'>Details</a>
             </div>

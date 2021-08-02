@@ -2,8 +2,9 @@ import React from 'react'
 
 function login() {
     return (
-        <div>
-            Este es loginn
+        <div className = 'login'>
+            
+            
         </div>
     )
 }

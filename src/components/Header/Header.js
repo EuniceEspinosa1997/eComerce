@@ -1,8 +1,19 @@
-import React from 'react';
+import React,{useContext} from 'react';
 import logo from '../../img/logo.png';
 import { Link } from 'react-router-dom';
+import {UserContext} from '../../Context/context'
 
 function Header() {
+
+    const value = useContext(UserContext);
+    const [menu, setMenu] = value.menu;
+    const [cart] = value.cart;
+    console.log(cart)
+
+    const toogleMenu = ()=>{
+        setMenu(!menu);
+    }
+    
     return (
         <div>
             <header>
@@ -19,9 +30,9 @@ function Header() {
                         <Link to = '/products'>Productos</Link>
                     </li>
                 </ul>
-                <div className = 'cart'>
+                <div className = 'cart-header' onClick = {toogleMenu}>
                     <box-icon name = 'cart'></box-icon>
-                    <span className =  'total-items'>0</span>
+                    <span className =  'total-items'>{cart.length}</span>
                 </div>
             </header>
             
