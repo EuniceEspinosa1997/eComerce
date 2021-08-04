@@ -1,12 +1,11 @@
 {
-  "users":[
+  "users": [
     {
       "id": 1,
       "name": "admin",
       "pass": 1234,
       "email": "eunice@gmail.com",
       "userType": 1
-
     },
     {
       "id": 2,
