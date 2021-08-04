@@ -1,5 +1,5 @@
 import React,{useState, createContext, useEffect} from 'react'
-import { useProducts } from '../hooks/useProducts';
+import { useProducts } from '../Hooks/useProducts';
 
 
 export const UserContext = createContext();

@@ -1,9 +1,9 @@
 import React,{useContext} from 'react';
-import { UserContext} from '../../Context/context'
+import { UserContext} from '../../Context/Context'
 import Logo from '../../img/logo.png'
-import './details.css';
+import './Details.css';
 
-function details() {
+function Details() {
     
     return (
       <div className = 'container'>
@@ -27,4 +27,4 @@ function details() {
     )
 }
 
-export default details
+export default Details

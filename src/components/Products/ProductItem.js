@@ -1,41 +1,30 @@
 import React,{useContext} from 'react';
-import { Link } from 'react-router-dom'
-import {UserContext} from '../../Context/context'
+import {UserContext} from '../../Context/Context'
 
-function ProductoItem({
-    id,
-    title,
-    price,
-    image,
-    categoryId,
-    quantity
-
-}) {
+function ProductoItem({product}) {
     
     const value = useContext(UserContext);
     const addCart = value.addCart;
     const seeDetails = value.seeDetails;
 
-
-
     return (
      <div className = 'product'>
         <a href = '/'>
             <div className = 'product-img'>
-                    <img src = {image} alt = {title}/>
+                    <img src = {product.image} alt = {product.title}/>
             </div>
         </a>
         <div className = 'product-footer'>
-            <h1>{title}</h1>
-            <p>{categoryId}</p>
-            <p className = 'price'>${price}</p>
+            <h1>{product.title}</h1>
+            <p>{product.categoryId}</p>
+            <p className = 'price'>${product.price}</p>
         </div>
         <div className = 'button'>
-            <button className = 'btn' onClick = {() => addCart(id)}>Add to cart</button>
+            <button className = 'btn' onClick = {() => addCart(product.id)}>Add to cart</button>
             <div>
                 <a href = '/details' className = 'btn' onClick = {() => { 
                     
-                    return id;
+                    return product.id;
                 }}>Details</a>
             </div>
         </div>

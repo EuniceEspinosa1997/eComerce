@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import {productsApi} from '../api/productsApi'
+import {ProductsApi} from '../Api/ProductsApi'
 
 export const useProducts = () => {
 
@@ -11,7 +11,7 @@ export const useProducts = () => {
 
     const getProducts = async() => {
         try{
-           const resp = await productsApi.get('http://localhost:3006/products');
+           const resp = await ProductsApi.get('http://localhost:3006/products');
             setProducts(resp.data); 
         }catch(err){
             console.log(err);

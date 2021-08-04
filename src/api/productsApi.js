@@ -1,4 +1,4 @@
 import axios from 'axios';
 
-export const productsApi = axios.create();
+export const ProductsApi = axios.create();
 

@@ -1,11 +1,14 @@
 import React from 'react';
-import { BrowserRouter as Router } from 'react-router-dom';
-import { DataProvider } from './Context/context';
-import Login from './components/Login/login';
+import { BrowserRouter as Router,Switch, Route } from 'react-router-dom';
+import { DataProvider } from './Context/Context';
+import { Cart } from './components/Cart/Cart';
+import Login from './components/Login/Login';
 import Footer from './components/Footer/Footer';
 import Header from './components/Header/Header';
-import { Cart } from './components/Cart/cart';
-import Routing from './components/Routing';
+import Routing from './components/Routing'
+import ProductsList from './components/Products/ProductsList';
+import Details from './components/Details/Details'
+import Index from './components/Index/Index';
 import 'boxicons';
 
 
@@ -17,7 +20,12 @@ function App() {
           <Login/>
           <Header/>
           <Cart/>
-          <Routing/>
+          <Switch>
+               <Route path = '/' exact component = {Index}/>
+               <Route path = '/products' exact component = {ProductsList}/>
+               <Route path = '/details' exact component = {Details}/>
+            </Switch> 
+            {/* <Routing/> */}
         </Router>
         <div className = 'content-wrap'>
           <Footer/>

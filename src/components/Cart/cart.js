@@ -1,6 +1,5 @@
 import React,{useContext} from 'react'
-import logo from '../../img/logo.png'
-import { UserContext} from '../../Context/context'
+import { UserContext} from '../../Context/Context'
 
 
 export const Cart = () => {
